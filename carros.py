@@ -24,7 +24,7 @@ def cadastrar_carro():
     # carrega o arquivo
     with open(ARQ_CARROS, "r") as f:
         dicionario_saida = json.load(f)
-        carros_json = json.load(f)
+        carros_json = dicionario_saida
 
         # código pra não deixar um carro ser cadastrado com um id já utilizado
         aux = True
@@ -62,7 +62,7 @@ def cadastrar_cliente():
     # carrega o arquivo
     with open(ARQ_CLIENTES, "r") as f:
         dicionario_saida = json.load(f)
-        clientes_json = json.load(f)
+        clientes_json = dicionario_saida
 
         # código pra não deixar um cliente ser cadastrado com um id já utilizado
         aux = True
@@ -100,7 +100,7 @@ def cadastrar_vendedor():
     # carrega o arquivo
     with open(ARQ_VENDEDORES, "r") as f:
         dicionario_saida = json.load(f)
-        vendedores_json = json.load(f)
+        vendedores_json = dicionario_saida
 
         # código pra não deixar um vendedor ser cadastrado com um id já utilizado
         aux = True
